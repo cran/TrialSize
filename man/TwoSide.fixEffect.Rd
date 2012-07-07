@@ -1,0 +1,60 @@
+\name{TwoSide.fixEffect}
+\alias{TwoSide.fixEffect}
+%- Also NEED an '\alias' for EACH other topic documented here.
+\title{
+Two-Sided Tests with fixed effect sizes
+}
+\description{
+Two-sided tests 
+
+H0: delta_j = 0
+
+Ha: delta_j is not equal to 0 
+
+}
+\usage{
+TwoSide.fixEffect(m, m1, delta, a1, r1, fdr)
+}
+
+\arguments{
+ 
+  \item{m}{
+m is the total number of multiple tests
+}
+  \item{m1}{
+m1 = m - m0. m0 is the number of tests which the null hypotheses are true ;
+m1 is the number of tests which the alternative hypotheses are true. (or m1 is the number of prognostic genes)
+}
+  \item{delta}{
+delta_j is the constant effect size for jth test. delta_j=(E(Xj)-E(Yj))/sigma_j.
+Xij(Yij) denote the expression level of gene j for subject i in group 1( and group 2, respectively) with common variance sigma_j^2. We assume {delta_j=0, j in M0} and {delta_j >0, j in M1}=effect size for prognostic genes. 
+}
+  \item{a1}{
+a1 is the allocation proportion for group 1. a2=1-a1.
+}
+  \item{r1}{
+r1 is the number of true rejection
+}
+  \item{fdr}{
+fdr is the FDR level.
+}
+}
+\details{
+alpha_star=r1*fdr/((m-m1)*(1-fdr)), which is the marginal type I error level for r1 true rejection with the FDR controlled at f. 
+
+beta_star=1-r1/m1, which is equal to 1-power.
+}
+
+\references{
+Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York: Marcel Dekker, 2003
+}
+
+
+\examples{
+Example.12.2.3<-TwoSide.fixEffect(m=4000,m1=40,delta=1,a1=0.5,r1=24,fdr=0.01)
+Example.12.2.3
+# n=73
+}
+
+\keyword{ ~kwd1 }
+\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
