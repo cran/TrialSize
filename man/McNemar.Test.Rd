@@ -5,9 +5,11 @@
  McNemar Test in 2 by 2 table
 }
 \description{
-2 by 2 table. Test either a shift from 0 to 1 or a shift from 1 to 0 before treatment and after treatment.p1+=P10+P11, P+1=P01+P11
+2 by 2 table. Test either a shift from 0 to 1 or a shift from 1 to 0 before treatment and after treatment.
 
-H0: p1+ = p+1
+\eqn{p_{1+}=P_{10}+P_{11}, p_{+1}=P_{01}+P_{11}}
+
+Ho: \eqn{p_{1+} = p_{+1}}
 
 Ha: not equal
 

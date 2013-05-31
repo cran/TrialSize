@@ -5,7 +5,7 @@
 One-way ANOVA pairwise comparison
 }
 \description{
-H0: p_i=p_j
+Ho: \eqn{p_i=p_j}
 Ha: not all equal
 }
 \usage{
@@ -29,7 +29,7 @@ the mean response rate for test drug
 the rate for reference drug
 }
   \item{delta}{
-delta=p_i-p_j
+delta=\eqn{p_i - p_j}
 }
 }
 
@@ -44,11 +44,6 @@ Example.4.4.2
 Example.4.4.2<-OneWayANOVA.PairwiseComparison(0.05,0.2,2,0.2,0.5,-0.3)
 Example.4.4.2
 
-## The function is currently defined as
-function(alpha,beta,tau,p1,p2,delta){
-n.ij<-(qnorm(1-alpha/(2*tau))+qnorm(1-beta))^2*(p1*(1-p1)+p2*(1-p2))/delta^2
-n.ij
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

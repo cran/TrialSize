@@ -6,13 +6,13 @@ Test for Non-Inferiority/Superiority of Intra-Subject CVs
 }
 \description{
 
-H0: CVr - CVt  < delta
+H0: CVr - CVt  < \eqn{\delta}
 
-Ha: CVr - CVt  >= delta
+Ha: CVr - CVt  \eqn{ \ge \delta }
 
-if delta > 0, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference; 
+if \eqn{\delta} > 0, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference; 
 
-if delta < 0, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference.
+if \eqn{\delta} < 0, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference.
 }
 \usage{
 ISCV.NIS(alpha, beta, CVt, CVr, m, margin)

@@ -5,7 +5,7 @@
 One sample proportion test for equivalence
 }
 \description{
-H0: |p-p0| >= margin
+Ho: \eqn{ |p-p0| \ge margin }
 
 Ha: |p-p0| < margin
 
@@ -43,11 +43,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.1.4<-OneSampleProportion.Equivalence(0.05,0.2,0.6,0.05,.2)
 Example.4.1.4
 
-## The function is currently defined as
-function(alpha,beta,p,delta,margin){
-n<-(qnorm(1-alpha)+qnorm(1-beta/2))^2*p*(1-p)/(margin-abs(delta))^2
-n
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

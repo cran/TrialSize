@@ -5,7 +5,7 @@
 Relative Risk in Crossover Design test for Non-inferiority/Superiority
 }
 \description{
-H0: log(OR) <= margin
+Ho: \eqn{log(OR) \le margin }
  
 Ha: log(OR) >  margin
 }
@@ -35,14 +35,6 @@ the superiority or non-inferiority margin
 Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York: Marcel Dekker, 2003
 }
 
-\examples{
-
-## The function is currently defined as
-function(alpha,beta,sigma,or,margin){
-n<-(qnorm(1-alpha)+qnorm(1-beta))^2*sigma/(log(or)-margin)^2
-n
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }

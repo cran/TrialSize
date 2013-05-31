@@ -46,10 +46,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.7.3.4<-Cox.Equality(0.05,0.2,log(2),0.5,0.5,0.8)
 Example.7.3.4
 
-## The function is currently defined as
-function(alpha,beta,loghr,p1,p2,d){
-n=(qnorm(alpha/2)+qnorm(1-beta))^2/(loghr^2*p1*p2*d)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

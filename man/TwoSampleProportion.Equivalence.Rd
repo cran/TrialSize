@@ -5,7 +5,7 @@
 Two sample proportion test for equivalence
 }
 \description{
-H0: |p1-p2| >= margin
+Ho: \eqn{|p1-p2| \ge margin }
 
 Ha: |p1-p2| < margin
 
@@ -46,12 +46,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.2.4<-TwoSampleProportion.Equivalence(0.05,0.2,0.75,0.8,1,0.2,0.05)
 Example.4.2.4
 
-## The function is currently defined as
-function(alpha,beta,p1,p2,k,delta,margin){
-n2<-(qnorm(1-alpha)+qnorm(1-beta))^2*(p1*(1-p1)/k+p2*(1-p2))/(margin-abs(delta))^2
-n1<-k*n2
-n1
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -7,9 +7,9 @@ The evaluation of vaccine efficacy with Extremely Low Disease Incidence(ELDI)
 \description{
 If the disease incidence rate is extremely low, the number of cases in the vaccine group given the total number of cases is distributed as a binomial random variable with parameter theta. 
 
-H0: theta>=theta0
+Ho: \eqn{\theta  \ge \theta_{0}}
 
-Ha: theta< theta0
+Ha: \eqn{\theta  <  \theta_{0}}
 
 }
 \usage{
@@ -46,11 +46,6 @@ Example.15.6.2<-Vaccine.ELDI(0.05,0.2,0.5,1/3,0.001,0.002)
 Example.15.6.2
 # 17837
 
-## The function is currently defined as
-function(alpha,beta,theta0,theta,pt,pc){
-#theta=pt/(pt+pc)
-n=(qnorm(1-alpha)*sqrt(theta0*(1-theta0))+qnorm(1-beta)*sqrt(theta*(1-theta)))^2/((pt+pc)*(theta-theta0)^2)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

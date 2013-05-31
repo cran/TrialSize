@@ -5,11 +5,11 @@
 Test for non-inferiority/superiority in Cox PH model. 
 }
 \description{
-b is the log hazard ratio for treatment, delta is the margin
+b is the log hazard ratio for treatment, \eqn{\delta} is the margin
 
-H0: b <= delta
+H0: b  \eqn{ \le \delta }
 
-Ha: b > delta 
+Ha: b > \eqn{\delta} 
 }
 \usage{
 Cox.NIS(alpha, beta, loghr, p1, p2, d, margin)

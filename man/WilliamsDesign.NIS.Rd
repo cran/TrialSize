@@ -6,9 +6,9 @@ Williams Design test for Non-inferiority/Superiority
 }
 \description{
 
-H0: mu1-mu2 <= margin
+H0: \eqn{\mu_1-\mu_2 \le margin }
 
-Ha: mu1-mu2 >  margin
+Ha:  \eqn{\mu_1-\mu_2 > margin }
 
 }
 \usage{
@@ -34,7 +34,7 @@ total sequence number
 the superiority or non-inferiority margin
 }
   \item{margin}{
-margin=mu1-mu2
+margin=\eqn{\mu_1-\mu_2}
 }
 }
 
@@ -46,11 +46,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.5.4<-WilliamsDesign.NIS(0.05,0.2,0.75^2,6,0.2,0.05)
 Example.4.5.4
 
-## The function is currently defined as
-function(alpha,beta,sigma,sequence,delta,margin){
-n<-(qnorm(1-alpha)+qnorm(1-beta))^2*sigma/(sequence*(delta-margin)^2)
-n
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

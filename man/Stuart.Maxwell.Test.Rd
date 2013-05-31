@@ -7,7 +7,7 @@ Stuart-Maxwell Test
 \description{
 Extention from McNemar test to r by r table (r>2). 
 
-H0: pij = pji for all different i,j.
+Ho: \eqn{p_{ij} = p_{ji}} for all different i,j.
 
 Ha: not equal
 
@@ -37,14 +37,6 @@ r by r tables, r is df
 Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York: Marcel Dekker, 2003
 }
 
-\examples{
-## The function is currently defined as
-function(noncen,p.ij,p.ji,r){
-sum=0
-n<-noncen*(for (j in 1:r){for (i in 1:j){
-sum=sum+(p.ij[i,j]-p.ji[j,i])^2/(p.ij[i,j]+p.ji[j,i])}})^-1
-}
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }

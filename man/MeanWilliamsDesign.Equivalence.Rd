@@ -7,8 +7,8 @@ Test for Equivalence in Multiple-Sample William Design
 \description{
 Compare more than two treatment under a crossover design. 
 
-H0: |margin| >= delta
-Ha: |margin| <  delta 
+H0: |margin| \eqn{\ge \delta }
+Ha: |margin| <  \eqn{ \delta } 
 
 This test is whether the test drug is equivalent to the control in average if the null hypothesis is rejected at significant level alpha
 }
@@ -36,9 +36,8 @@ MeanWilliamsDesign.Equivalence(alpha, beta, sigma, k, delta, margin)
 
 
   \item{margin}{
-margin=mu_i-mu_j
-
-the difference between the true mean response of group i mu_i and group j mu_j
+\eqn{margin=\mu_i-\mu_j}
+the difference between the true mean response of group i \eqn{\mu_i} and group j \eqn{\mu_j}
 
 }
 

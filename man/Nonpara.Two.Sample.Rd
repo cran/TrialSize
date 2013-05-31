@@ -5,7 +5,9 @@
 Two sample location problem for Nonparametric
 }
 \description{
-H0: theta=0; Ha: theta is not equal to 0. 
+Ho: theta=0; 
+
+Ha: theta is not equal to 0. 
 }
 \usage{
 Nonpara.Two.Sample(alpha, beta, k, p1, p2, p3)
@@ -20,13 +22,13 @@ Nonpara.Two.Sample(alpha, beta, k, p1, p2, p3)
 k=n1/n2
 }
   \item{p1}{
-p1=P(yi>=xj)
+\eqn{p1=P(y_i \ge x_j)}
 }
   \item{p2}{
-p2=P(yi>=xj1 and yi>=xj2)
+\eqn{p2=P(y_i \ge x_{j1} ~and~ y_{i} \ge x_{j2})}
 }
   \item{p3}{
-p3=P(yi1>=xj and yi2>=xj)
+\eqn{p3=P(y_{i1} \ge x_j ~and~ y_{i2} \ge x_{j})}
 }
 }
 
@@ -39,10 +41,6 @@ Example.14.3<-Nonpara.Two.Sample(0.05,0.2,1,0.7,0.8,0.8)
 Example.14.3
 #54
 
-## The function is currently defined as
-function(alpha, beta,k, p1,p2,p3){
-n=(qnorm(1-alpha/2)*sqrt(k*(k+1)/12)+qnorm(1-beta)*sqrt(k^2*(p2-p1^2)+k*(p3-p1^2)))^2/(k^2*(1/2-p1)^2)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

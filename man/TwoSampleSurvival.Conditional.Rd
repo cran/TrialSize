@@ -8,7 +8,7 @@ Test for two sample conditional data in exponential model for survival data
 unconditional versus conditional
 }
 \usage{
-TwoSampleSurvival.Conditional(alpha, beta, lam1, lam2, eta1, eta2, k, ttotal, taccrual, gamma1, gamma2)
+TwoSampleSurvival.Conditional(alpha,beta,lam1,lam2,eta1,eta2,k,ttotal,taccrual,g1,g2)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -39,10 +39,10 @@ Total trial time
   \item{taccrual}{
 accrual time period
 }
-  \item{gamma1}{
+  \item{g1}{
 parameter for the entry distribution of control group, which is uniform patient entry with gamma1=0. 
 }
-  \item{gamma2}{
+  \item{g2}{
 parameter for the entry distribution of treatment group, which is uniform patient entry with gamma2=0. 
 }
 

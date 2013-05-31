@@ -5,7 +5,7 @@
 Composite Efficacy Measure(CEM) for Vaccine clinical trials. 
 }
 \description{
-Let sij be the severity score associated with the jth case in the ith treatment group. mu_i=mean(sij), sigma^2_i=var(sij). 
+Let sij be the severity score associated with the jth case in the ith treatment group. \eqn{\mu_i=mean(s_{ij})}, \eqn{\sigma^2_i=var(s_{ij})}. 
 
 H0: pT=pC and muT=muC
 

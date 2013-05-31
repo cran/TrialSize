@@ -5,8 +5,8 @@
 Two sample proportion test for Non-Inferiority/Superiority
 }
 \description{
-H0: p1-p2 <= margin
-Ha: p1-p2 >  margin
+Ho: \eqn{ p1-p2  \le margin }
+Ha: p1-p2 > margin
 
 if margin >0, the rejection of Null Hypothesis indicates the true rate p1 is superior over the reference value p2; 
 
@@ -49,12 +49,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.2.4<-TwoSampleProportion.NIS(0.05,0.2,0.65,0.85,1,0.2,0.05)
 Example.4.2.4
 
-## The function is currently defined as
-function(alpha,beta,p1,p2,k,delta,margin){
-n2<-(qnorm(1-alpha)+qnorm(1-beta))^2*(p1*(1-p1)/k+p2*(1-p2))/(delta-margin)^2
-n1<-k*n2
-n1
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

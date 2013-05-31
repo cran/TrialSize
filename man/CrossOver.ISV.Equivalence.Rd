@@ -7,9 +7,9 @@ Test for Similarity of Intra-Subject Variabilities in Crossover Design
 \description{
 the ratio = within-subject variance of treatment T / within-subject variance of treatment R  
 
-H0: the ratio >= delta or the ratio <=1/delta
+H0: the ratio \eqn{ \ge \delta } or the ratio \eqn{ \le \frac{1}{\delta}}
 
-Ha: 1/delta < the ratio < delta
+Ha: \eqn{ \frac{1}{\delta}} < the ratio < \eqn{\delta}
 
 
 }
@@ -34,7 +34,7 @@ within-subject variance of treatment 2
 for each subject, there are m replicates.
 }
   \item{margin}{
-margin=delta, the true ratio of sigma1/sigma2
+margin= \eqn{\delta}, the true ratio of sigma1/sigma2
 }
 }
 

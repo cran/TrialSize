@@ -5,7 +5,7 @@
 Two Sample Crossover Design Test for Equality
 }
 \description{
-H0: margin is equal to 0
+Ho: margin is equal to 0
 Ha: margin is unequal to 0 
 
 The test is finding whether there is a difference between the mean responses of the test group and control group.
@@ -26,7 +26,7 @@ TwoSampleCrossOver.Equality(alpha, beta, sigma, margin)
 
 }
   \item{margin}{
-margin=mu2-mu1
+\eqn{margin=\mu_2-\mu_1}
 
 the true mean difference between a test mu2 and a control mu1
 

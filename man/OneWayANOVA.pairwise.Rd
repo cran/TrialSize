@@ -5,8 +5,8 @@
 Pairwise Comparison for Multiple-Sample One-Way ANOVA
 }
 \description{
-H0: mu_i is equal to mu_j
-Ha: mu_i is not equal to mu_j
+Ho: \eqn{\mu_i} is equal to \eqn{\mu_j}
+Ha: \eqn{\mu_i} is not equal to \eqn{\mu_j}
 
 The test is comparing the means among treatments. There are tau pair comparisons of interested. Adjusted the multiple comparison by Bonferroni method, 
 }
@@ -27,9 +27,9 @@ OneWayANOVA.pairwise(alpha, beta, tau, sigma, margin)
   \item{sigma}{ standard deviation
 }
   \item{margin}{
-margin=mu_i-mu_j
+\eqn{margin=\mu_i-\mu_j}
 
-the difference between the true mean response of group i mu_i and group j mu_j
+the difference between the true mean response of group i \eqn{\mu_i} and group j \eqn{\mu_j}
 }
 }
 

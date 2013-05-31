@@ -5,8 +5,8 @@
 One Sample Mean Test for Equivalence
 }
 \description{
-H0: |margin|>=delta
-Ha: |margin|<delta
+Ho: \eqn{|margin| \ge delta }
+Ha: |margin| < delta
 
 The test is concluded to be equivalent to a gold standard on average if the null hypothesis is rejected at significance level alpha
 
@@ -26,9 +26,11 @@ OneSampleMean.Equivalence(alpha, beta, sigma,margin, delta)
 
 }
   \item{margin}{
-margin=xbar-mu0
+\eqn{margin=\bar{x}-\mu_0}
 
-the difference between the true mean response of a test xbar and a reference value mu0
+the difference between the true mean response of a test \eqn{\bar{x}}  and a reference value  \eqn{\mu_0}
+
+
 }
   \item{delta}{ the superiority or non-inferiority margin
 

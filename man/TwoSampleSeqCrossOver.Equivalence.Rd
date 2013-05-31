@@ -5,8 +5,9 @@
 Two sample proportion Crossover design test for equivalence
 }
 \description{
-H0: |p2-p1|>=margin
-Ha: |p2-p1|< margin
+Ho: \eqn{|p1-p2| \ge margin }
+
+Ha: |p1-p2| < margin
 
 }
 \usage{

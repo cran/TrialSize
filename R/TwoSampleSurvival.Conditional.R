@@ -1,5 +1,8 @@
 TwoSampleSurvival.Conditional <-
-function(alpha,beta,lam1,lam2,eta1,eta2,k,ttotal,taccrual,gamma1,gamma2){
+function(alpha,beta,lam1,lam2,eta1,eta2,k,ttotal,taccrual,g1,g2){
+
+gamma1=g1
+gamma2=g2
 
 variance1<-lam1^2*(lam1/(lam1+eta1)+lam1*gamma1*exp(-(lam1+eta1)*ttotal)*(1-exp((lam1+eta1-gamma1)*taccrual))/((lam1+eta1-gamma1)*(1-exp(-gamma1*taccrual))*(lam1+eta1)))^-1
 variance2<-lam2^2*(lam2/(lam2+eta1)+lam2*gamma2*exp(-(lam2+eta2)*ttotal)*(1-exp((lam2+eta2-gamma2)*taccrual))/((lam2+eta2-gamma2)*(1-exp(-gamma2*taccrual))*(lam2+eta2)))^-1

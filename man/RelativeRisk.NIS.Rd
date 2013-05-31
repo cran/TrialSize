@@ -5,7 +5,7 @@
 Relative Risk in Parallel Design test for Non-inferiority/Superiority
 }
 \description{
-H0: OR <= margin
+Ho: \eqn{OR \le margin}
 
 Ha: OR > margin
 }
@@ -45,11 +45,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.6.4<-RelativeRisk.NIS(0.05,0.2,2,1,0.4,0.25,.2)
 Example.4.6.4
 
-## The function is currently defined as
-function(alpha,beta,or,k,pt,pc,margin){
-n.c<-(qnorm(1-alpha)+qnorm(1-beta))^2*(1/(k*pt*(1-pt))+1/(pc*(1-pc)))/(log(or)-margin)^2
-n.c
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

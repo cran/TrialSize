@@ -7,9 +7,9 @@ Test for Similarity of Intra-Subject Variabilities
 \description{
 the ratio = within-subject variance of treatment T / within-subject variance of treatment R  
 
-H0: the ratio >= delta or the ratio <=1/delta
+Ho: the ratio \eqn{ \ge \delta } or the ratio \eqn{ \le \frac{1}{\delta}}
 
-Ha: 1/delta < the ratio < delta
+Ha: \eqn{ \le \frac{1}{\delta}} < the ratio < \eqn{ \delta}
 
 
 }

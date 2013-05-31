@@ -34,7 +34,7 @@ Example: k=2 indicates a 1 to 2 test-control allocation.
 
 }
   \item{margin}{
-margin=mu2-mu1
+\eqn{margin=\mu_2-\mu_1}
 
 the true mean difference between a test mu2 and a control mu1
 }

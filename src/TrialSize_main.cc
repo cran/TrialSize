@@ -12,8 +12,8 @@ void DemoAutoCor(double *RetV, int *pLwant, double *InputVec, int *pLengthInput)
 double *AutoOutput = TrialSize(InputVec, pLengthInput[0]);
 int ii;
 int MaxTake = pLwant[0];
-if ( (int) floor(pLengthInput[0] / 4) < MaxTake) {
-MaxTake = (int) floor(pLengthInput[0] / 4);
+if ( (int) floor(static_cast<float>(pLengthInput[0] / 4)) < MaxTake) {
+MaxTake = (int) floor(static_cast<float>(pLengthInput[0] / 4));
 }
 for (ii = 0; ii <MaxTake; ii++) {
 RetV[ii] =AutoOutput[ii];

@@ -5,12 +5,8 @@
 Williams' Test for Minimum effective dose (MED)
 }
 \description{
-
-H0: mu1=mu2=...=mu_K
-
-Ha:  mu1=mu2=...=mu_(i-1) < mu_i < mu_(i+1) < mu_K
-
-
+Ho: \eqn{\mu_1=\mu_2=...=\mu_K }
+Ha:  \eqn{\mu_1=\mu_2=...=\mu_{i-1} < \mu_{i} < \mu_{i+1} < \mu_{K}}
 }
 \usage{
 Dose.Min.Effect(alpha, beta, qt, sigma, delta)
@@ -30,7 +26,7 @@ the critical value tk(alpha)
 standard deviation
 }
   \item{delta}{
-delta is the clinically meaningful minimal difference
+\eqn{\delta} is the clinically meaningful minimal difference
 }
 }
 
@@ -42,14 +38,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.11.4.1<-Dose.Min.Effect(0.05,0.2,1.75,0.22,0.11)
 Example.11.4.1
 #54
-
-
-## The function is currently defined as
-function(alpha, beta,qt,sigma,delta){
-
-#  not real t distribution qt(1-alpha,K) is from the table 12.1.1-12.1.4 in the book 
-n=2*sigma^2*(qt+qnorm(1-beta))^2/delta^2
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

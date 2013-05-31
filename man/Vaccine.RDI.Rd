@@ -36,10 +36,6 @@ Example.15.6.1<-Vaccine.RDI(0.05,0.2,0.01,0.02)
 Example.15.6.1
 # 14214
 
-## The function is currently defined as
-function(alpha,d,pt,pc){
-n=(qnorm(1-alpha/2)/d)^2*((1-pt)/pt+(1-pc)/pc)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

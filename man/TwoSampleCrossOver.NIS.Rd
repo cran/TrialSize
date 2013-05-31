@@ -5,8 +5,8 @@
 Two Sample Crossover Design Test for Non-Inferiority/Superiority
 }
 \description{
-H0: margin <= delta
-Ha: margin >  delta 
+Ho: \eqn{|margin| \ge delta }
+Ha: |margin| < delta
 
 if delta >0, the rejection of Null Hypothesis indicates the superiority of the test over the control; 
 
@@ -33,7 +33,7 @@ TwoSampleCrossOver.NIS(alpha, beta, sigma, delta, margin)
 }
 
   \item{margin}{
-margin=mu2-mu1
+\eqn{margin=\mu_2-\mu_1}
 
 the true mean difference between a test mu2 and a control mu1
 

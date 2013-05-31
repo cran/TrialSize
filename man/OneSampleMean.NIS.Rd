@@ -5,8 +5,8 @@
 One Sample Mean Test for Non-Inferiority/Superiority
 }
 \description{
-H0: margin<=delta
-Ha: margin>delta
+Ho: \eqn{ margin \le delta }
+Ha: margin > delta
 
 if delta >0, the rejection of Null Hypothesis indicates the true mean is superior over the reference value mu0; 
 
@@ -32,9 +32,10 @@ OneSampleMean.NIS(alpha, beta, sigma, margin, delta)
 
 }
   \item{margin}{
-margin=xbar-mu0
+\eqn{margin=\bar{x}-\mu_0}
 
-the difference between the true mean response of a test xbar and a reference value mu0
+the difference between the true mean response of a test \eqn{\bar{x}}  and a reference value  \eqn{\mu_0}
+
 }
 }
 

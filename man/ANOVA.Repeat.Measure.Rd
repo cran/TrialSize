@@ -6,9 +6,9 @@ ANOVA with Repeat Measures
 }
 \description{
 
-The study has multiple assessments in a parallel-group clinical trial. Alpha_i is the fixed effect for the ith treatment (sum(alpha_i)=0).
+The study has multiple assessments in a parallel-group clinical trial. \eqn{\alpha_i} is the fixed effect for the ith treatment \eqn{\sum \alpha_i =0}.
 
-Ho: alpha_i=alpha_i'
+Ho: \eqn{\alpha_{i} = \alpha_{i'} }
 
 Ha: not equal
 
@@ -47,10 +47,6 @@ Example.15.3.4
 
 
 
-## The function is currently defined as
-function(alpha, beta,sigma,delta,m){
-n=2*sigma^2*(qnorm(1-alpha/(m*2))+qnorm(1-beta))^2/delta^2
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

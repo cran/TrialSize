@@ -34,7 +34,7 @@ degree of freedom=r-1
 }
 }
 \details{
-(*) is  Chisquare_(r-1)(Chisqure_(alpha, r-1)|noncen)=beta
+(*) is  \eqn{\chi^{2}_{r-1}(\chi^{2}_{\alpha, r-1}|noncen)=\beta}
 }
 
 \references{

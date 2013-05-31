@@ -8,7 +8,7 @@ One Sample Mean Test for Equality
 H0: margin is equal to 0
 Ha: margin is not equal to 0
 
-The test is finding whether there is a difference between the mean response of the test xbar and the reference value mu0
+The test is finding whether there is a difference between the mean response of the test \eqn{\bar{x}} and the reference value \eqn{\mu_0}
 
 }
 \usage{
@@ -26,9 +26,9 @@ OneSampleMean.Equality(alpha, beta, sigma, margin)
 
 }
   \item{margin}{
-margin=xbar-mu0
+\eqn{margin=\bar{x}-\mu_0}
 
-the difference between the true mean response of a test xbar and a reference value mu0
+the difference between the true mean response of a test \eqn{\bar{x}}  and a reference value  \eqn{\mu_0}
 
 }
 }

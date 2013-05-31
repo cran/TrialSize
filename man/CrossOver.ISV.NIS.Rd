@@ -6,13 +6,13 @@ Test for Non-Inferiority/Superiority of Intra-Subject Variabilitie in Crossover 
 }
 \description{
 
-H0: the ratio that within-subject variance of treatment T / within-subject variance of treatment R  >= delta
+H0: the ratio that within-subject variance of treatment T / within-subject variance of treatment R \eqn{ \ge \delta }
 
-Ha: the ratio < delta
+Ha: the ratio < \eqn{\delta}
 
-if delta < 1, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference for the intra-subject variability; 
+if \eqn{\delta} < 1, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference for the intra-subject variability; 
 
-if delta > 1, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference for the intra-subject variability; .
+if \eqn{\delta} > 1, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference for the intra-subject variability; .
 }
 \usage{
 CrossOver.ISV.NIS(alpha, beta, sigma1, sigma2, m, margin)
@@ -35,7 +35,7 @@ within-subject variance of treatment 2
 for each subject, there are m replicates.
 }
   \item{margin}{
-margin=delta, the true ratio of sigma1/sigma2
+margin=\eqn{\delta}, the true ratio of sigma1/sigma2
 }
 }
 

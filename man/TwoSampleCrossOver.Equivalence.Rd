@@ -5,8 +5,8 @@
 Two Sample Crossover Design Test for Equivalence
 }
 \description{
-H0: |margin|>=delta
-Ha: |margin|<delta
+Ho: \eqn{|margin| \ge delta }
+Ha: |margin| < delta
 
 This test is whether the test drug is equivalent to the control in average if the null hypothesis is rejected at significant level alpha
 
@@ -31,7 +31,7 @@ TwoSampleCrossOver.Equivalence(alpha, beta, sigma, delta, margin)
 }
 
   \item{margin}{
-margin=mu2-mu1
+\eqn{margin=\mu_2-\mu_1}
 
 the true mean difference between a test mu2 and a control mu1
 

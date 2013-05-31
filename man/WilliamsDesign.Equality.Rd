@@ -5,7 +5,7 @@
 William Design test for equality
 }
 \description{
-H0: mu1-mu2=0
+Ho: \eqn{\mu_{1}-\mu_{2}=0}
 
 Ha: not equal to 0
 
@@ -29,7 +29,7 @@ WilliamsDesign.Equality(alpha, beta, sigma, sequence, delta)
 total sequence number 
 }
   \item{delta}{
-delta=mu2-mu1
+delta=\eqn{\mu_{1}-\mu_{2}}
 }
 }
 
@@ -41,11 +41,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.5.4<-WilliamsDesign.Equality(0.05,0.2,0.75^2,6,0.2)
 Example.4.5.4
 
-## The function is currently defined as
-function(alpha,beta,sigma,sequence,delta){
-n<-(qnorm(1-alpha/2)+qnorm(1-beta))^2*sigma/(sequence*delta^2)
-n
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

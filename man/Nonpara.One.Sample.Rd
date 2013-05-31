@@ -5,7 +5,9 @@
 One Sample Location problem in Nonparametric
 }
 \description{
-H0: theta=0; Ha: theta is not equal to 0. 
+Ho: theta=0
+
+Ha: theta is not equal to 0. 
 }
 \usage{
 Nonpara.One.Sample(alpha, beta, p2, p3, p4)
@@ -17,13 +19,13 @@ Nonpara.One.Sample(alpha, beta, p2, p3, p4)
   \item{beta}{ power = 1-beta
 }
   \item{p2}{
-p2=P(|zi|>=|zj|,zi>0)
+\eqn{p2=P(|z_i|>=|z_j|,z_i>0)}
 }
   \item{p3}{
-p3=P(|zi|>=|zj1|,|zi|>=|zj2|,zi>0)
+\eqn{p3=P(|z_i|>=|z_{j1}|,|z_i|>=|z_{j2}|,z_i>0)}
 }
   \item{p4}{
-p4=P(|zj1|>=|zi|>=|zj2|,zj1>0,zi>0)
+\eqn{p4=P(|z_{j1}|>=|z_i|>=|z_{j2}|,z_{j1}>0,z_i>0)}
 }
 }
 
@@ -36,10 +38,6 @@ Example.14.2<-Nonpara.One.Sample(0.05,0.2,0.3,0.4,0.05)
 Example.14.2
 # 383
 
-## The function is currently defined as
-function(alpha, beta, p2,p3,p4){
-n=(qnorm(1-alpha/2)/sqrt(12)+qnorm(1-beta)*sqrt(p3+4*p4-4*p2^2))^2/(1/4-p2)^2
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -31,9 +31,8 @@ MeanWilliamsDesign.Equality(alpha, beta, sigma, k, margin)
 
 }
   \item{margin}{
-margin=mu_i-mu_j
-
-the difference between the true mean response of group i mu_i and group j mu_j
+\eqn{margin=\mu_i-\mu_j}
+the difference between the true mean response of group i \eqn{\mu_i} and group j \eqn{\mu_j}
 
 }
 }

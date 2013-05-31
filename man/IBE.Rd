@@ -5,11 +5,11 @@
 Individual Bioequivalence
 }
 \description{
-Consider 2 by 2 crossover design. gamma=delta^2+sigmaD^2+sigmaWT^2-sigmaWR^2-thetaIBE*max(sigma0^2,sigmaWR^2) 
+Consider 2 by 2 crossover design. \eqn{ \gamma=\delta^2+\sigma_D^2+\sigma_{WT}^2-\sigma_{WR}^2-\theta_{IBE}*max(\sigma_{0}^2,\sigma_{WR}^2)} 
 
-H0: gamma >= 0
+Ho: \eqn{\gamma \ge 0 }
 
-Ha: gamma <  0
+Ha: \eqn{\gamma <  0 }
 
 }
 \usage{
@@ -53,36 +53,13 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 }
 
 \examples{
-Example.10.4<-IBE(alpha=0.05, beta=0.2,delta=0, sigmaD=0.2,sigmaWT=0.3,sigmaWR=0.3,a=0.5,b=0.5,thetaIBE=2.5)
+Example.10.4<-IBE(0.05, 0.2, 0, 0.2,0.3,0.3,0.5,0.5,2.5)
 Example.10.4
 
 # n=22 IBE reach 0 
 
 
 
-## The function is currently defined as
-function(alpha, beta,delta, sigmaD,sigmaWT,sigmaWR,a,b,thetaIBE){
-Sigma<-function(sigmaD,sigmaWT,sigmaWR,a,b)
-{
-Sigma=sigmaD^2+a*sigmaWT^2+b*sigmaWR^2
-  }
-
-
-U<-function(n,alpha, beta,delta, sigmaD,sigmaWT,sigmaWR,a,b,thetaIBE)
-{
-U=((abs(delta)+qt(alpha,2*n-2)*Sigma(sigmaD,sigmaWT,sigmaWR,0.5,0.5)*sqrt(2/n)/2)^2-delta^2)^2
-+Sigma(sigmaD,sigmaWT,sigmaWR,0.5,0.5)^4*((2*n-2)/qchisq(1-alpha, 2*n-2)-1)^2
-+0.5^2*sigmaWT^4*((2*n-2)/qchisq(1-alpha, 2*n-2)-1)^2
-+(1.5+thetaIBE)^2*sigmaWR^4*((2*n-2)/qchisq(alpha, 2*n-2)-1)^2
-  }
-
-gamma=delta^2+sigmaD^2+sigmaWT^2-sigmaWR^2-thetaIBE*sigmaWR^2
-for (i in 1:1000){
-bound=gamma+sqrt(U(i,alpha, 0.05,delta, sigmaD,sigmaWT,sigmaWR,a,b,thetaIBE))
-+sqrt(U(i,alpha, beta,delta, sigmaD,sigmaWT,sigmaWR,a,b,thetaIBE))
-print(c(i,bound))
-  }
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

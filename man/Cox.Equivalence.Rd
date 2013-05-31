@@ -7,9 +7,9 @@ Test for Equivalence in Cox PH model.
 \description{
 b is the log hazard ratio for treatment, delta is the margin
 
-H0: |b| >= delta
+Ho: |b| \eqn{ \ge \delta } 
 
-Ha: |b| < delta 
+Ha: |b| < \eqn{\delta} 
 }
 \usage{
 Cox.Equivalence(alpha, beta, loghr, p1, p2, d, margin)

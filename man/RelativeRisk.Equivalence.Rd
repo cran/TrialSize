@@ -5,7 +5,7 @@
 Relative Risk in Parallel Design test for Equivalence 
 }
 \description{
-H0: |log(OR)| >= margin
+Ho: \eqn{|log(OR)| \ge margin }
 
 Ha: |log(OR)| < margin
 }
@@ -45,13 +45,6 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.4.6.4<-RelativeRisk.Equivalence(0.05,0.2,2,1,0.25,0.25,.5)
 Example.4.6.4
 
-
-
-## The function is currently defined as
-function(alpha,beta,or,k,pt,pc,margin){
-n.c<-(qnorm(1-alpha)+qnorm(1-beta/2))^2*(1/(k*pt*(1-pt))+1/(pc*(1-pc)))/(margin-abs(log(or)))^2
-n.c
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

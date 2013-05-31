@@ -7,9 +7,9 @@ Propensity Score ignoring strata
 \description{
 Combining data across J strata. Still use weighted Mantel_Haenszel test.
 
-H0: pj1=pj2, 
+Ho: \eqn{p_{j1}=p_{j2}}, 
 
-Ha: pj2*qj1/(pj1*qj2)=phi, which is not equal to 1
+Ha: \eqn{p_{j2} q_{j1}/(p_{j1} q_{j2})}=phi, which is not equal to 1
 }
 \usage{
 Propensity.Score.nostrata(alpha, beta, J, a, b, p1, phi)
@@ -35,7 +35,7 @@ b=c(b11,b21,...,bJ1), bjk=njk/nj, k=1,2 denote the allocation proportion for gro
 p1=c(p11,p21,....,pj1), pjk denote the response probability for group k in stratum j. qjk=1-pjk.
 }
   \item{phi}{
-pj2*qj1/(pj1*qj2)=phi, so that pj2=phi*pj1/(qj1+phi*pj1)
+\eqn{p_{j2} q_{j1}/(p_{j1} q_{j2})}=phi, so that \eqn{p_{j2} = phi p_{j1} /( q_{j1}+ phi p_{j1})}
 }
 }
 
@@ -44,26 +44,15 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 }
 
 \examples{
-Example.15.2.3.2<-Propensity.Score.nostrata(0.05,0.2,5,c(0.15,0.15,0.2,0.25,0.25),c(0.4,0.4,0.5,0.6,0.6),c(0.5,0.6,0.7,0.8,0.9),2)
+
+a=c(0.15,0.15,0.2,0.25,0.25);
+b=c(0.4,0.4,0.5,0.6,0.6);
+p1=c(0.5,0.6,0.7,0.8,0.9);
+
+Example.15.2.3.2<-Propensity.Score.nostrata(alpha=0.05,beta=0.2,J=5,a,b,p1,phi=2)
 Example.15.2.3.2
 # 1151
 
-## The function is currently defined as
-function(alpha, beta,J,a,b,p1,phi){
-p2=phi*p1/(phi*p1+1-p1)
-
-p1star=sum(a*b*p1)/sum(a*b)
-p2star=sum(a*(1-b)*p2)/sum(a*(1-b))
-pstar=sum(a*(b*p1+(1-b)*p2))
-
-b1=sum(a*b)
-b2=sum(a*(1-b))
-
-sigma1star=p1star*(1-p1star)/b1+p2star*(1-p2star)/b2
-sigma0star=pstar*(1-pstar)*(1/b1+1/b2)
-
-n=(sqrt(sigma0star)*qnorm(1-alpha/2)+sqrt(sigma1star)*qnorm(1-beta))^2/(p1star-p2star)^2
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

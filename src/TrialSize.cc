@@ -19,7 +19,7 @@ Free(XVec);
 // Xclass:AutoCor()
 // Returns AutoCorrelation of Given Vector
 double* Xclass::AutoCor() {
-int DoDrops = (int) floor( XLength / 4); // AutoCor to +- L/4 positions;
+int DoDrops =  XLength / 4 ; // AutoCor to +- L/4 positions;
 double *ReturnVec = (double *) Calloc( DoDrops, double);
 double RecordSum;
 int ii, jj;

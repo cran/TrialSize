@@ -7,13 +7,13 @@ Test for Non-Inferiority/Superiority of Intra-Subject Variabilities
 \description{
 the ratio = within-subject variance of treatment T / within-subject variance of treatment R  
 
-H0: the ratio >= delta
+H0: the ratio \eqn{\ge \delta}
 
-Ha: the ratio < delta
+Ha: the ratio < \eqn{\delta}
 
-if delta < 1, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference for the intra-subject variability; 
+if \eqn{\delta} < 1, the rejection of Null Hypothesis indicates the superiority of the test drug over the reference for the intra-subject variability; 
 
-if delta > 1, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference for the intra-subject variability; .
+if \eqn{\delta} > 1, the rejection of the null hypothesis implies the non-inferiority of the test drug against the reference for the intra-subject variability; .
 }
 \usage{
 ISV.NIS(alpha, beta, sigma1, sigma2, m, margin)

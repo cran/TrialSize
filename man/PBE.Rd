@@ -24,20 +24,20 @@ PBE(alpha, beta, sigma1.1, sigmatt, sigmatr, sigmabt, sigmabr, rho, a, delta, la
 
 }
   \item{sigma1.1}{
-sigma_a.b^2=sigmaD^2+a*sigmaWT^2+b*sigmaWR^2. Here a=b=1.
+\eqn{\sigma_{a.b}^2=\sigma_{D}^2+a\sigma_{WT}^2+b\sigma_{WR}^2}. Here a=b=1.
 }
   \item{sigmatt}{
-sigmatt^2=sigmaBT^2+sigmaWT^2,  sigmawt^2 is the within-subjects variance in test formulation 
+\eqn{\sigma_{tt}^2=\sigma_{BT}^2+\sigma_{WT}^2},  \eqn{\sigma_{wt}^2} is the within-subjects variance in test formulation 
 
 }
   \item{sigmatr}{
-sigmatr^2=sigmaBR^2+sigmaWR^2,  sigmawr^2 is the within-subjects variance in reference formulation 
+\eqn{\sigma_{tr}^2=\sigma_{BR}^2+\sigma_{WR}^2},  \eqn{\sigma_{wr}^2} is the within-subjects variance in reference formulation 
 }
   \item{sigmabt}{
-sigmabt^2 is the between-subjects variance in test formulation
+\eqn{\sigma_{bt}^2} is the between-subjects variance in test formulation
 }
   \item{sigmabr}{
-sigmabr^2 is the between-subjects variance in reference formulation
+\eqn{\sigma_{br}^2} is the between-subjects variance in reference formulation
 
 }
   \item{rho}{
@@ -50,7 +50,7 @@ a= thetaPBE =1.74
 delta is the mean difference of AUC
 }
   \item{lamda}{
-lamda=delta^2+sigmaTT^2-sigmaTR^2-thetaPBE*max(sigma0^2,sigmaTR^2)
+\eqn{lamda=delta^{2}+\sigma^2-\sigma_{TR}^2-thetaPBE*max(\sigma_{0}^2,\sigma_{TR}^2)}
 }
 }
 
@@ -63,13 +63,6 @@ Example.10.3<-PBE(0.05,0.2,0.2,sqrt(0.17),sqrt(0.17),0.4,0.4,0.75,1.74,0.00,-0.2
 Example.10.3
 # 12
 
-## The function is currently defined as
-function(alpha, beta, sigma1.1,sigmatt,sigmatr,sigmabt,sigmabr,rho,a,delta,lamda){
-
-temp=2*delta^2*sigma1.1^2+sigmatt^4+(1+a)^2*sigmatr^4-2*(1+a)*rho^2*sigmabt^2*sigmabr^2
-n=temp*(qnorm(1-alpha)+qnorm(1-beta))^2/(lamda^2)
-return(n)
-  }
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

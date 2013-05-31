@@ -5,8 +5,8 @@
 Two Sample Mean Test for Non-Inferiority/Superiority
 }
 \description{
-H0: margin <= delta
-Ha: margin >  delta 
+Ho: \eqn{ margin \le delta }
+Ha: margin > delta
 
 if delta >0, the rejection of Null Hypothesis indicates the superiority of the test over the control; 
 
@@ -40,7 +40,7 @@ Example: k=2 indicates a 1 to 2 test-control allocation.
 }
 
   \item{margin}{
-margin=mu2-mu1
+\eqn{margin=\mu_2-\mu_1}
 
 the true mean difference between a test mu2 and a control mu1
 }
