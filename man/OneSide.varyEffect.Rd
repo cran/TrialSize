@@ -64,10 +64,4 @@ delta=c(rep(1,40/2),rep(1/2,40/2));
 Example.12.2.2 <- OneSide.varyEffect(100,150,4000,40,delta,0.5,24,0.01)
 Example.12.2.2
 # n=148 s1<n<s2, h(s1)<0,h(s2)<0
-
-
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

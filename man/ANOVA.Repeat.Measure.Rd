@@ -44,11 +44,4 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.15.3.4<-ANOVA.Repeat.Measure(0.05,0.2,1.25,1.5,3)
 Example.15.3.4
 # 15
-
-
-
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

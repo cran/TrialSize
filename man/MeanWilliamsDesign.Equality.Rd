@@ -51,7 +51,3 @@ Example.3.5.4<-MeanWilliamsDesign.Equality(0.025,0.2,0.1,6,-0.1)
 Example.3.5.4 # 2
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

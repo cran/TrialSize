@@ -48,7 +48,3 @@ Example.9.2.1<-ISCV.NIS(0.05,0.2,0.7,0.5,2,0.1)
 Example.9.2.1
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

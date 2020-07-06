@@ -49,9 +49,4 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 Example.3.2.4<-TwoSampleMean.Equality(0.05,0.2,0.1,1,0.05)
 Example.3.2.4 # 63
 
-  
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

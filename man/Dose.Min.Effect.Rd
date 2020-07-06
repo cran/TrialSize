@@ -39,7 +39,3 @@ Example.11.4.1<-Dose.Min.Effect(0.05,0.2,1.75,0.22,0.11)
 Example.11.4.1
 #54
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

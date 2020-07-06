@@ -43,9 +43,7 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 
 
 \examples{
-Example.3.1.4<-OneSampleMean.Equivalence(0.05,0.2,0.1,0.05,0) 
-Example.3.1.4   # 35
+OneSampleMean.Equivalence(0.05,0.2,0.1,0.05,0) 
+# 35
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

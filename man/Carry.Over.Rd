@@ -46,7 +46,3 @@ Example.6.5.2<-Carry.Over(0.025,0.2,2.3,2.4,0.89)
 Example.6.5.2 # 110
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

@@ -56,7 +56,3 @@ Example.3.2.4<-TwoSampleMean.Equivalence(0.1,0.1,0.1,1,0.05,0.01)
 Example.3.2.4 #107
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

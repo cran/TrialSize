@@ -59,7 +59,3 @@ Example.7.2.4<-TwoSampleSurvival.Equivalence(0.05,0.2,1,1,1,3,1,0.00001,0.5)
 Example.7.2.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

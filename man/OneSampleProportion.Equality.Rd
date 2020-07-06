@@ -12,7 +12,7 @@ Ha: not equal
 The test is finding whether there is a difference between the true rate of the test drug and reference value p0
 }
 \usage{
-OneSampleProportion.Equality(alpha, beta, p, delta)
+OneSampleProportion.Equality(alpha, beta, p, differ)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -26,8 +26,8 @@ OneSampleProportion.Equality(alpha, beta, p, delta)
 the true response rate
 }
 
-  \item{delta}{
-delta=p-p0
+  \item{differ}{
+differ=p-p0
 
 the difference between the true response rate of a test drug and a reference value p0
 
@@ -43,7 +43,3 @@ Example.4.1.4<-OneSampleProportion.Equality(0.05,0.2,0.5,0.2)
 Example.4.1.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

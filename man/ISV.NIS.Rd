@@ -47,10 +47,5 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 \examples{
 Example.9.1.1<-ISV.NIS(0.05,0.2,0.3^2,0.45^2,3,1.1)
 Example.9.1.1
-
-
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

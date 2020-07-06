@@ -14,7 +14,7 @@ Ha: not equal to b0
 The test is finding whether there is a difference between the hazard rates of the treatment and control.
 }
 \usage{
-Cox.Equality(alpha, beta, loghr, p1, p2, d)
+Cox.Equality(alpha, beta, loghr, p1,d)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -30,9 +30,6 @@ log hazard ratio=log(lamda2/lamda1)=b
   \item{p1}{
 the proportion of patients in treatment 1 group
 }
-  \item{p2}{
-the proportion of patients in treatment 2 group
-}
   \item{d}{
 the probability of observing an event
 }
@@ -43,11 +40,7 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 }
 
 \examples{
-Example.7.3.4<-Cox.Equality(0.05,0.2,log(2),0.5,0.5,0.8)
+Example.7.3.4<-Cox.Equality(0.05,0.2,log(2),0.5,0.8)
 Example.7.3.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

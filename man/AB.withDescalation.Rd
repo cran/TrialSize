@@ -63,8 +63,3 @@ Example.11.6.2
 # Example.11.6.2[7]=0.2 
 }
 
-
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

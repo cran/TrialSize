@@ -46,10 +46,8 @@ Chow SC, Shao J, Wang H. Sample Size Calculation in Clinical Research. New York:
 
 
 \examples{
-Example.3.1.4<-OneSampleMean.NIS(0.05,0.2,1,0.5,-0.5)
-Example.3.1.4 # 7
+OneSampleMean.NIS(0.05,0.2,1,0.5,-0.5)
+# 7
 
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

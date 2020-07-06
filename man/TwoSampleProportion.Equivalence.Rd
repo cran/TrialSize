@@ -47,7 +47,3 @@ Example.4.2.4<-TwoSampleProportion.Equivalence(0.05,0.2,0.75,0.8,1,0.2,0.05)
 Example.4.2.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

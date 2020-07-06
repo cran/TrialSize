@@ -11,7 +11,7 @@ Ha: |p-p0| < margin
 
 The proportion of response is equivalent to the reference p0 is the null hypothesis is rejected}
 \usage{
-OneSampleProportion.Equivalence(alpha, beta, p, delta, margin)
+OneSampleProportion.Equivalence(alpha, beta, p, delta, differ)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -30,7 +30,7 @@ delta=p-p0
 
 the difference between the true response rate of a test drug and a reference value p0
 }
-  \item{margin}{
+  \item{differ}{
 the superiority or non-inferiority margin
 }
 }
@@ -44,7 +44,3 @@ Example.4.1.4<-OneSampleProportion.Equivalence(0.05,0.2,0.6,0.05,.2)
 Example.4.1.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

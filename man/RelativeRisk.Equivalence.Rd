@@ -46,7 +46,3 @@ Example.4.6.4<-RelativeRisk.Equivalence(0.05,0.2,2,1,0.25,0.25,.5)
 Example.4.6.4
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

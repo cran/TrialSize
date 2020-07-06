@@ -58,5 +58,3 @@ Example.12.2.3
 # n=73
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
