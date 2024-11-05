@@ -6,21 +6,21 @@
 #include "Rmath.h" // R math functions
 Xclass::Xclass(double *InputVec, int LengthInput) {
 this->XLength = LengthInput;
-this->XVec = (double*) Calloc( this->XLength,
+this->XVec = (double*) R_Calloc( this->XLength,
 double ); // Calloc is R memory Call
 for (int ii = 0; ii < XLength; ii++) {
 XVec[ii] = InputVec[ii];
 }
 }
 Xclass::~Xclass() {
-Free(XVec);
+R_Free(XVec);
 }
 /////////////////////////////////////////////
 // Xclass:AutoCor()
 // Returns AutoCorrelation of Given Vector
 double* Xclass::AutoCor() {
 int DoDrops =  XLength / 4 ; // AutoCor to +- L/4 positions;
-double *ReturnVec = (double *) Calloc( DoDrops, double);
+double *ReturnVec = (double *) R_Calloc( DoDrops, double);
 double RecordSum;
 int ii, jj;
 for (ii = 0; ii < DoDrops; ii++) {

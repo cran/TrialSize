@@ -1,4 +1,4 @@
-2d91cdebda09588bb4864a5a0d0a613b *DESCRIPTION
+29a179c5194ff0f0672c19a8c8333797 *DESCRIPTION
 7e5a5427c8cce9916b0f45050f113b74 *NAMESPACE
 464062c0e4c63538c17eccf211a996a0 *R/AB.withDescalation.R
 b74c03ef2e13bbaddaa8f74ea51fefb8 *R/AB.withoutDescalation.R
@@ -173,6 +173,6 @@ b2756e4dc59c0da57bbc938a39529bca *man/Vaccine.RDI.Rd
 f41540d2efe81363583505a368d1c072 *man/WilliamsDesign.NIS.Rd
 fd7e7f5315f614b883a8cf01bbad1681 *man/gof.Pearson.Rd
 9fa294b7286d712c00161eb30ea5902b *man/gof.Pearson.twoway.Rd
-90e3655dedc8a77060d9220e87c49ff6 *src/TrialSize.cc
+5ab1a814731bf970217f9d1a79da0a2e *src/TrialSize.cc
 c0f3a6e52ce1cc2ad8aa6941b4cde865 *src/TrialSize.h
-43fc8a0922b2aa128f26d7614c96b39a *src/TrialSize_main.cc
+8c5a2200b9bc2ecb8532465ae6ad5978 *src/TrialSize_main.cc

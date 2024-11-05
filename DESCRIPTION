@@ -1,7 +1,7 @@
 Package: TrialSize
 Title: R Functions for Chapter 3,4,6,7,9,10,11,12,14,15 of Sample Size
         Calculation in Clinical Research
-Version: 1.4
+Version: 1.4.1
 Date: 2020-07-01
 Author: Ed Zhang ; Vicky Qian Wu ; Shein-Chung Chow ; Harry G.Zhang
         (Quality check) <ed.zhang.jr@gmail.com>
@@ -10,7 +10,7 @@ Description: Functions and Examples in Sample Size Calculation in
         Clinical Research.
 License: GPL (>= 2.15.1)
 LazyLoad: yes
-Packaged: 2020-07-06 21:30:02 UTC; Vicky
+Packaged: 2024-11-05 05:29:21 UTC; hornik
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2020-07-06 21:40:03 UTC
+Date/Publication: 2024-11-05 05:38:51 UTC

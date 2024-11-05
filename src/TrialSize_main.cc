@@ -18,7 +18,7 @@ MaxTake = (int) floor(static_cast<float>(pLengthInput[0] / 4));
 for (ii = 0; ii <MaxTake; ii++) {
 RetV[ii] =AutoOutput[ii];
 }
-Free(AutoOutput); // Free Memory created by function
+R_Free(AutoOutput); // Free Memory created by function
 double UseLessNormal = .4 + rnorm(0.0, 1.0) * 2;
 // Completely Useless Generation of Normal
 Rprintf("DemoAutoCor:: Completely Useless Normal = %.3f\n", UseLessNormal);
